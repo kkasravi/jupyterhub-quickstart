@@ -10,7 +10,7 @@ set -x
 
 # Install base packages needed for running JupyterHub.
 
-pip install -r /tmp/src/requirements.txt
+pip install --allow-unsafe -r /tmp/src/requirements.txt
 
 # Install npm packages required by JupyterHub.
 
