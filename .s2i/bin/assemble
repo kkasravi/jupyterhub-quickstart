@@ -15,7 +15,10 @@ pip install -r /tmp/src/requirements.in -r /tmp/src/requirements-build.in
 # Install npm packages required by JupyterHub.
 
 echo " -----> Installing npm packages."
+echo " pwd="$PWD
 
+cp /tmp/src/package.json .
+cp /tmp/src/package-lock.json .
 npm install -g
 
 # Copy global JupyterHub config file into place.
